@@ -366,8 +366,9 @@ def export_file():
     if not records:
         return jsonify({'error': 'Nenhum registro para exportar.'}), 400
 
-    # Exportar para arquivo temporário e enviar
-    temp_path = os.path.join(os.getcwd(), "_temp_relatorio.xlsx")
+    # Exportar para arquivo temporário (compatível com ambiente serverless como Vercel)
+    import tempfile
+    temp_path = os.path.join(tempfile.gettempdir(), f"_temp_relatorio_{os.getpid()}.xlsx")
     try:
         export_to_excel(records, temp_path)
         with open(temp_path, "rb") as f:
