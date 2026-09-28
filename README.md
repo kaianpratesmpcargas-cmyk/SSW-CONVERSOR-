@@ -26,7 +26,7 @@ Aplicativo desktop profissional em Python para converter dados copiados diretame
   - **Aba Acompanhamento**: Cabeçalho azul marinho estilizado, congelamento da 1ª linha (`freeze_panes`), autofiltro ativado, largura de coluna automática, formatação de moeda brasileira (`R$ #,##0.00`), peso numérico e destaque condicional de linhas/situações.
   - **Aba RESUMO**: Indicadores consolidados e tabela gerencial agrupada por **Destino** (Quantidade, Atrasados e Peso).
   - Diálogo padrão de salvamento com nome sugerido `MP_CARGAS_SSW_YYYY-MM-DD.xlsx` e confirmação antes de sobrescrever.
-- **100% Local**: Não utiliza IA, não requer internet e não depende de banco de dados.
+- **100% Local**: Não utiliza IA, não depende de banco de dados.
 
 ---
 
